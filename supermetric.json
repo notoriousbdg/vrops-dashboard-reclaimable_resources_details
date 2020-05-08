@@ -1,0 +1,202 @@
+{
+  "77696a4e-f20f-48ea-8b71-ffce3832a486": {
+    "resourceKinds": [
+      {
+        "resourceKindKey": "vSphere World",
+        "adapterKindKey": "VMWARE"
+      }
+    ],
+    "modificationTime": 1588011849616,
+    "name": "Potential Savings from VM Snapshots",
+    "formula": "sum(${adaptertype=VMWARE, objecttype=Datacenter, metric=reclaimable|vm_snapshots|cost, depth=10})",
+    "description": "",
+    "unitId": "currencymonth",
+    "modifiedBy": "6df558f7-25df-4222-96b9-ade784399d19"
+  },
+  "fc817400-5e34-4785-8d94-60a54d04de42": {
+    "resourceKinds": [
+      {
+        "resourceKindKey": "vSphere World",
+        "adapterKindKey": "VMWARE"
+      }
+    ],
+    "modificationTime": 1588011779191,
+    "name": "Potential Savings from Powered Off VMs",
+    "formula": "sum(${adaptertype=VMWARE, objecttype=Datacenter, metric=reclaimable|poweredOff_vms|cost, depth=10})",
+    "description": "",
+    "unitId": "currencymonth",
+    "modifiedBy": "6df558f7-25df-4222-96b9-ade784399d19"
+  },
+  "9d345011-ac92-48f1-9984-80e167de0df8": {
+    "resourceKinds": [
+      {
+        "resourceKindKey": "CustomDatacenter",
+        "adapterKindKey": "VMWARE"
+      },
+      {
+        "resourceKindKey": "ClusterComputeResource",
+        "adapterKindKey": "VMWARE"
+      },
+      {
+        "resourceKindKey": "vSphere World",
+        "adapterKindKey": "VMWARE"
+      },
+      {
+        "resourceKindKey": "Datacenter",
+        "adapterKindKey": "VMWARE"
+      }
+    ],
+    "modificationTime": 1588893866140,
+    "name": "Potential Savings from Orphaned Disks",
+    "formula": "sum(${adaptertype=VMWARE, objecttype=Datastore, metric=reclaimable|orphaned_disk|cost, depth=10})",
+    "description": "",
+    "unitId": "currencymonth",
+    "modifiedBy": "6df558f7-25df-4222-96b9-ade784399d19"
+  },
+  "843b35a1-36a6-45b2-b2ca-2002968d89a4": {
+    "resourceKinds": [
+      {
+        "resourceKindKey": "vSphere World",
+        "adapterKindKey": "VMWARE"
+      }
+    ],
+    "modificationTime": 1588011450595,
+    "name": "Potential Savings from Idle VMs",
+    "formula": "sum(${adaptertype=VMWARE, objecttype=Datacenter, metric=reclaimable|idle_vms|cost, depth=10})",
+    "description": "",
+    "unitId": "currencymonth",
+    "modifiedBy": "6df558f7-25df-4222-96b9-ade784399d19"
+  },
+  "23ac3b18-0938-40b1-acef-d984d24d274c": {
+    "resourceKinds": [
+      {
+        "resourceKindKey": "CustomDatacenter",
+        "adapterKindKey": "VMWARE"
+      },
+      {
+        "resourceKindKey": "vSphere World",
+        "adapterKindKey": "VMWARE"
+      },
+      {
+        "resourceKindKey": "Datacenter",
+        "adapterKindKey": "VMWARE"
+      }
+    ],
+    "modificationTime": 1588081212937,
+    "name": "Reclaimable vCPUs from Idle VMs",
+    "formula": "sum(${adaptertype=VMWARE, objecttype=ClusterComputeResource, metric=reclaimable|idle_vms|cpu, depth=10})",
+    "description": "",
+    "unitId": "",
+    "modifiedBy": "6df558f7-25df-4222-96b9-ade784399d19"
+  },
+  "3934ac2b-0eb7-4c52-8378-85a0e52b5ce8": {
+    "resourceKinds": [
+      {
+        "resourceKindKey": "CustomDatacenter",
+        "adapterKindKey": "VMWARE"
+      },
+      {
+        "resourceKindKey": "vSphere World",
+        "adapterKindKey": "VMWARE"
+      },
+      {
+        "resourceKindKey": "Datacenter",
+        "adapterKindKey": "VMWARE"
+      }
+    ],
+    "modificationTime": 1588081680902,
+    "name": "Reclaimable Disk Space from Powered Off VMs",
+    "formula": "sum(${adaptertype=VMWARE, objecttype=ClusterComputeResource, metric=reclaimable|poweredOff_vms|diskspace, depth=10})",
+    "description": "",
+    "unitId": "gb",
+    "modifiedBy": "6df558f7-25df-4222-96b9-ade784399d19"
+  },
+  "03fd3652-1d97-40c0-aecd-6bd8a27d2f87": {
+    "resourceKinds": [
+      {
+        "resourceKindKey": "CustomDatacenter",
+        "adapterKindKey": "VMWARE"
+      },
+      {
+        "resourceKindKey": "vSphere World",
+        "adapterKindKey": "VMWARE"
+      },
+      {
+        "resourceKindKey": "Datacenter",
+        "adapterKindKey": "VMWARE"
+      }
+    ],
+    "modificationTime": 1588081866414,
+    "name": "Reclaimable Disk Space from Orphaned Disks",
+    "formula": "sum(${adaptertype=VMWARE, objecttype=Datastore, metric=reclaimable|orphaned_disk|diskspace, depth=10})",
+    "description": "",
+    "unitId": "gb",
+    "modifiedBy": "6df558f7-25df-4222-96b9-ade784399d19"
+  },
+  "3145b719-6cf7-4070-92e6-3a2498478821": {
+    "resourceKinds": [
+      {
+        "resourceKindKey": "CustomDatacenter",
+        "adapterKindKey": "VMWARE"
+      },
+      {
+        "resourceKindKey": "vSphere World",
+        "adapterKindKey": "VMWARE"
+      },
+      {
+        "resourceKindKey": "Datacenter",
+        "adapterKindKey": "VMWARE"
+      }
+    ],
+    "modificationTime": 1588081758529,
+    "name": "Reclaimable Disk Space from VM Snapshots",
+    "formula": "sum(${adaptertype=VMWARE, objecttype=ClusterComputeResource, metric=reclaimable|vm_snapshots|diskspace, depth=10})",
+    "description": "",
+    "unitId": "gb",
+    "modifiedBy": "6df558f7-25df-4222-96b9-ade784399d19"
+  },
+  "52a66b1a-06a7-4c5a-83d8-2dc770c952d2": {
+    "resourceKinds": [
+      {
+        "resourceKindKey": "CustomDatacenter",
+        "adapterKindKey": "VMWARE"
+      },
+      {
+        "resourceKindKey": "vSphere World",
+        "adapterKindKey": "VMWARE"
+      },
+      {
+        "resourceKindKey": "Datacenter",
+        "adapterKindKey": "VMWARE"
+      }
+    ],
+    "modificationTime": 1588081567480,
+    "name": "Reclaimable Memory from Idle VMs",
+    "formula": "sum(${adaptertype=VMWARE, objecttype=ClusterComputeResource, metric=reclaimable|idle_vms|mem, depth=10})/1024/1024",
+    "description": "",
+    "unitId": "gb",
+    "modifiedBy": "6df558f7-25df-4222-96b9-ade784399d19"
+  },
+  "fd57f7e0-7646-4e4f-82e5-46064d0b6085": {
+    "resourceKinds": [
+      {
+        "resourceKindKey": "CustomDatacenter",
+        "adapterKindKey": "VMWARE"
+      },
+      {
+        "resourceKindKey": "vSphere World",
+        "adapterKindKey": "VMWARE"
+      },
+      {
+        "resourceKindKey": "Datacenter",
+        "adapterKindKey": "VMWARE"
+      }
+    ],
+    "modificationTime": 1588081513146,
+    "name": "Reclaimable Disk Space from Idle VMs",
+    "formula": "sum(${adaptertype=VMWARE, objecttype=ClusterComputeResource, metric=reclaimable|idle_vms|diskspace, depth=10})",
+    "description": "",
+    "unitId": "gb",
+    "modifiedBy": "6df558f7-25df-4222-96b9-ade784399d19"
+  }
+}
