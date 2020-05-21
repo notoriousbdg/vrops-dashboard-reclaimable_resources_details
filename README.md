@@ -1,5 +1,5 @@
 
-# Reclaimable Resources Details Dashboard for vRealize Operations 8.0 and 8.1
+# Reclaimable Resources Details Dashboard for vRealize Operations 8.0, 8.1, and Cloud
 ---------
 
 Use this [vRealize Operations](https://www.vmware.com/products/vrealize-operations.html) dashboard to identify reclaimable resources in your enviroment.
@@ -71,7 +71,7 @@ Use this [vRealize Operations](https://www.vmware.com/products/vrealize-operatio
 
 ## Support
 
-This dashboard requires vRealize Operation 8.0 or 8.1 Advanced or Enterprise edition.
+This dashboard requires vRealize Operation 8.0 or 8.1 Advanced or Enterprise edition or vRealize Operations Cloud.
 
 Please open an [issue](https://github.com/notoriousbdg/vrops-dashboard-reclaimable_resources_details/issues) for feedback.
 
